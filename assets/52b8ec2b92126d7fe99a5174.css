@@ -1,0 +1,34 @@
+/*
+Theme Name: Nexa Service
+Theme URI: https://codehavenhub.com/
+Author: CodeHavenHub
+Author URI: https://codehavenhub.com/
+Description: Seven editable business and service designs with a Classic/Hybrid WordPress foundation and optional NEXA Companion.
+Version: 1.0.0
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nexa-service
+Tags: blog, custom-logo, custom-menu, featured-images, translation-ready, wide-blocks
+Copyright (C) 2026 NEXA SERVICE contributors.
+*/
+
+/* Keep SVG symbol definitions out of document flow. */
+.nexasvc-symbol-definitions {
+	display: none;
+}
+
+/* Native widget content must fit its footer grid track. */
+.nexa-climate .footer-cols > div {
+	min-width: 0;
+}
+.nexa-climate .nc-footer-widget :where(input, select, textarea, audio, video, iframe, img) {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+.nexa-climate .nc-footer-widget .wp-calendar-table {
+	table-layout: fixed;
+	width: 100%;
+}
